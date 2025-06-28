@@ -35,9 +35,13 @@ No build tools or server required.
 # 📁 Folder Structure
 alarm-clock/
 │
+
 ├── index.html          # Main HTML file
+
 ├── style.css           # Styling (responsive and dark mode)
+
 ├── script.js           # Alarm logic
+
 └── assets/             # Icons, Audio
 
 # 📄 License
