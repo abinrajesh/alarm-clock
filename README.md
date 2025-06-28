@@ -38,8 +38,7 @@ alarm-clock/
 ├── index.html          # Main HTML file
 ├── style.css           # Styling (responsive and dark mode)
 ├── script.js           # Alarm logic
-├── assets/             # Icons, images
-└── screenshots/        # UI screenshots for README
+└── assets/             # Icons, Audio
 
 # 📄 License
 This project is licensed under the [MIT License](LICENSE.txt).
