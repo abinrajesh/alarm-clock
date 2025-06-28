@@ -558,18 +558,4 @@ body {
         gap: 0.2rem;
     }
 
-
-    .popup-card,
-    .popup-box {
-        width: 80%;
-    }
-
-    .popup-buttons {
-        flex-direction: column;
-    }
-
-    .popup-buttons .btn {
-        width: 100%;
-    }
-
 }
