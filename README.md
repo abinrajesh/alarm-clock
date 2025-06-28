@@ -42,4 +42,4 @@ alarm-clock/
 ├── assets/             # Icons, images
 └── screenshots/        # UI screenshots for README
 ## 📄 License
-This project is licensed under the [MIT License] (LICENSE.txt).
+This project is licensed under the [MIT License](LICENSE.txt).
