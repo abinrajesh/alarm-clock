@@ -24,16 +24,15 @@ JavaScript — logic and alarm functionality
 
 # 🚀 Getting Started
 1. Clone the repo
-bash
-Copy code
+
 git clone https://github.com/abinrajesh/alarm-clock.git
+
 cd alarm-clock
+
 2. Open index.html in your browser
 No build tools or server required.
 
 # 📁 Folder Structure
-perl
-Copy code
 alarm-clock/
 │
 ├── index.html          # Main HTML file
@@ -41,5 +40,6 @@ alarm-clock/
 ├── script.js           # Alarm logic
 ├── assets/             # Icons, images
 └── screenshots/        # UI screenshots for README
+
 # 📄 License
 This project is licensed under the [MIT License](LICENSE.txt).
