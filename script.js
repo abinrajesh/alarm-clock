@@ -2,12 +2,18 @@ console.log("Script.js is initialized!");
 
 time();
 let currentEditingCard = null;
+const alarmSound = document.getElementById("alarmSound");
 
 document.getElementById("addBtn").addEventListener("click", openPopup);
 document.getElementById("cancelBtn").addEventListener("click", closePopup);
 document.getElementById("alarmForm").addEventListener("submit", addAlarm);
 document.getElementById("saveEditBtn").addEventListener("click", saveAlarmChanges);
 document.getElementById("cancelEditBtn").addEventListener("click", closeEditPopup);
+document.getElementById("stopAlarmBtn").addEventListener("click", stopAlarm);
+document.getElementById("snoozeAlarmBtn").addEventListener("click", snoozeAlarm);
+
+
+
 
 
 
@@ -27,7 +33,28 @@ function time() {
 
     }, 1000);
 
+    
+    
 }
+
+setInterval(() => {
+    const now = new Date();
+    const currentTime = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+
+    const allAlarms = document.querySelectorAll('.alarm-card');
+
+    allAlarms.forEach(card => {
+        const time = card.querySelector('.alarm-time span').innerText;
+        const label = card.querySelector('.label').innerText;
+
+        // Prevent retrigger
+        if (time === currentTime && !card.classList.contains("triggered")) {
+            triggerAlarm(label, time);
+            card.classList.add("triggered");
+        }
+    });
+
+}, 1000);
 
 
 function openPopup() {
@@ -89,7 +116,7 @@ function addAlarm(event) {
 
     const editButton = document.createElement('button');
     editButton.className = "edit-btn";
-    editButton.innerHTML = `<img src="Icons/pencil-square.svg" alt="">`;
+    editButton.innerHTML = `<img src="Assets/Icons/pencil-square.svg" alt="">`;
 
     // Functionality for the editButton
     editButton.addEventListener("click", () => {
@@ -110,7 +137,7 @@ function addAlarm(event) {
 
     const deleteButton = document.createElement('button');
     deleteButton.className = "delete-btn";
-    deleteButton.innerHTML = `<img src="Icons/trash3-fill.svg" alt="">`;
+    deleteButton.innerHTML = `<img src="Assets/Icons/trash3-fill.svg" alt="">`;
 
     // Functionality for the deleteButton
     deleteButton.addEventListener("click", () => {
@@ -152,5 +179,33 @@ function saveAlarmChanges() {
 
     closeEditPopup();
 
+}
+
+function triggerAlarm(label, time) {
+    document.getElementById("activeAlarmLabel").innerText = label;
+    document.getElementById("activeAlarmTime").innerText = time;
+    document.getElementById("activeAlarmPopup").style.display = "flex";
+    alarmSound.play();
+
+
+}
+
+function stopAlarm() {
+    document.getElementById("activeAlarmPopup").style.display = "none";
+    alarmSound.pause();
+    alarmSound.currentTime = 0;
+}
+
+function snoozeAlarm() {
+    document.getElementById("activeAlarmPopup").style.display = "none";
+    alarmSound.pause();
+    alarmSound.currentTime = 0;
+
+    setTimeout(() => {
+        triggerAlarm(
+            document.getElementById("activeAlarmLabel").innerText,
+            document.getElementById("activeAlarmTime").innerText
+        );
+    }, 1 * 60 * 1000);
 }
 

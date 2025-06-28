@@ -92,10 +92,11 @@
                 <div class="active-alarm-info">
                     <p id="activeAlarmLabel">Unnamed Alarm</p>
                     <p id="activeAlarmTime">00:00</p>
+                    <audio id="alarmSound" src="Assets/Audio/alarm-clock-90867.mp3" loop preload="auto"></audio>
                 </div>
                 <div class="popup-buttons">
-                    <button class="btn stop-btn" onclick="stopAlarm()">Stop</button>
-                    <button class="btn snooze-btn" onclick="snoozeAlarm()">Snooze</button>
+                    <button class="btn stop-btn" id="stopAlarmBtn" >Stop</button>
+                    <button class="btn snooze-btn" id="snoozeAlarmBtn" >Snooze</button>
                 </div>
             </div>
         </div>
