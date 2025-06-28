@@ -392,3 +392,53 @@ body {
     background: #3fb984;
     color: #fff;
 }
+
+
+/* Alarm active popup */
+#activeAlarmPopup .popup-box {
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    color: white;
+}
+
+#activeAlarmPopup h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.active-alarm-info p {
+    font-size: 1.2rem;
+    margin: 0.4rem 0;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.popup-buttons .btn {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.stop-btn {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.snooze-btn {
+    background-color: #ffa500;
+    color: white;
+}
