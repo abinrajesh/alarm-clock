@@ -26,7 +26,7 @@ JavaScript — logic and alarm functionality
 1. Clone the repo
 bash
 Copy code
-git clone https://github.com/yourusername/alarm-clock.git
+git clone https://github.com/abinrajesh/alarm-clock.git
 cd alarm-clock
 2. Open index.html in your browser
 No build tools or server required.
@@ -42,4 +42,4 @@ alarm-clock/
 ├── assets/             # Icons, images
 └── screenshots/        # UI screenshots for README
 ## 📄 License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License] (LICENSE.txt).
