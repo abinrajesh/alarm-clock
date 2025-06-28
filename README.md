@@ -1,7 +1,7 @@
-## ⏰ Alarm Clock Web App
+# ⏰ Alarm Clock Web App
 A sleek and responsive Alarm Clock built using HTML, CSS, and JavaScript. Designed to work smoothly across devices, with elegant visuals and essential alarm features like naming, editing, deleting, and snoozing.
 
-## 🔥 Features
+# 🔥 Features
 ⌚ Live Clock showing real-time updates.
 
 🕰️ Add Alarms with custom labels and time.
@@ -15,14 +15,14 @@ A sleek and responsive Alarm Clock built using HTML, CSS, and JavaScript. Design
 🔔 Alarm Popup to stop or snooze the alarm.
 
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 HTML — structure
 
 CSS — design and responsiveness
 
 JavaScript — logic and alarm functionality
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 1. Clone the repo
 bash
 Copy code
@@ -31,7 +31,7 @@ cd alarm-clock
 2. Open index.html in your browser
 No build tools or server required.
 
-## 📁 Folder Structure
+# 📁 Folder Structure
 perl
 Copy code
 alarm-clock/
@@ -41,5 +41,5 @@ alarm-clock/
 ├── script.js           # Alarm logic
 ├── assets/             # Icons, images
 └── screenshots/        # UI screenshots for README
-## 📄 License
+# 📄 License
 This project is licensed under the [MIT License](LICENSE.txt).
