@@ -485,7 +485,7 @@ body {
 
     .popup-card,
     .popup-box {
-        width: 95%;
+        width: 80%;
         padding: 1rem;
     }
 
@@ -506,13 +506,12 @@ body {
 
 /* ======= RESPONSIVE FIXES ======= */
 @media (max-width: 500px) {
-    .container {
-        padding: 1rem 1rem 1rem 1rem;
-        /* Add spacing around content */
-    }
+    /* .container {
+        padding: 0 0.5rem;
+    } */
 
     .content {
-        width: 100%;
+        width: 80%;
         padding: 1rem;
         border-radius: 0.75rem;
     }
