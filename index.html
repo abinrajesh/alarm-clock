@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="content">
+
+            <div class="Alarm-clock-card">
+
+                <div class="time">
+
+                    <div class="time-heading">
+                        <h2>Time</h2>
+                    </div>
+                    <div class="time-display"><span id="timeDisplay"></span></div>
+
+                </div>
+
+                <div class="alarm-cards" id="alarmCards">
+                    <div class="alarm-heading">
+                        <h2>Alarm</h2>
+                    </div>
+
+                </div>
+
+                <div class="alarm-add">
+                    <div class="alarm-add-btn">
+                        <button class="add-btn" id="addBtn">
+                            Add Alarm
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- Add Alarm Popup -->
+        <div class="popup-overlay" id="addAlarmPopup">
+            <div class="popup-card">
+                <h3 class="popup-title">Add New Alarm</h3>
+                <form id="alarmForm">
+                    <div class="form-group">
+                        <label for="alarmLabel">Name</label>
+                        <input type="text" id="alarmLabelInp" placeholder="Alarm name">
+                    </div>
+                    <div class="form-group">
+                        <label for="alarmTime">Time</label>
+                        <input type="time" id="alarmTimeInp" required>
+                    </div>
+                    <div class="popup-buttons">
+                        <button type="submit" id="confirmBtn" class="confirm-btn">Set Alarm</button>
+                        <button type="button" id="cancelBtn" class="cancel-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- Edit Alarm Popup -->
+        <div class="popup-overlay" id="editAlarmPopup">
+            <div class="popup-box">
+                <h2>Edit Alarm</h2>
+                <label for="editAlarmLabel">Label</label>
+                <input type="text" id="editAlarmLabel" placeholder="Alarm label" />
+
+                <label for="editAlarmTime">Time</label>
+                <input type="time" id="editAlarmTime" />
+
+                <div class="popup-buttons">
+                    <button class="btn cancel-btn" id="cancelEditBtn">Cancel</button>
+                    <button class="btn save-btn" id="saveEditBtn">Save</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
